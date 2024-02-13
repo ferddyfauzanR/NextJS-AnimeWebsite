@@ -8,13 +8,17 @@ const Home = async() => {
   anime.data
   
   return (
-    <div>
-      <div className="py-4 px-8 flex justify-between items-center ">
-        <h1 className="text-2xl font-bold">Populer anime</h1>
-        <Link href='/populer' className="md:text-md text-sm underline hover:text-indigo-500 transition-all">Lihat Semua</Link>
+    <div className="">
+      <div className=" pt-0 px-8 flex justify-start items-center">
+        <h1 className="absolute text-xl font-bold bg-red-300 pb-4 pt-2 rounded-xl px-2">Populer anime</h1>
+      </div>
+      <div className=" pt-4 px-8 flex justify-end items-center ">
+        <Link href='/populer' className="absolute pb-8 md:text-md text-sm underline hover:text-indigo-500 transition-all">Lihat Semua</Link>
       </div>
       
-      <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 px-8 bg-red-300  rounded-2xl p-4 container mx-auto">
+      
+      <div className="static grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 px-8 bg-red-300  rounded-2xl p-8 container mx-auto">
+      
       {anime.data.map(data => {
         return (
           <div key={data.mal_id} className="shadow-xl rounded-md bg-red-100 hover:scale-105">
