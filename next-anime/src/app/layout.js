@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="md:mx-1 bg-slate-200 rounded-xl bg-gradient-to-r from-slate-500 to-transparent mt-1">
+        <div className="md:mx-1 bg-slate-200 rounded-md bg-gradient-to-r from-slate-500 to-transparent mt-1 pb-4">
           <div className="container mx-auto px-4">
             <Navbar />
             {children}
