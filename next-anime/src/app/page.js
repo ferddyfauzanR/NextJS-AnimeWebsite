@@ -1,4 +1,4 @@
-import AnimeList from "@/components/TopAnimeList"
+
 import TopAnimeList from "@/components/TopAnimeList"
 
 const Home = async () => {
@@ -14,7 +14,7 @@ const Home = async () => {
         <TopAnimeList api={anime} title=" Top Anime" />
       </div>
       <div className="pt-8">
-        <AnimeList api={anime2} title=" Anime List "/>
+        <TopAnimeList api={anime2} title=" Anime List "/>
       </div>
     </div>
 
